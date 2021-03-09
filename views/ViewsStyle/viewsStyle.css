@@ -1,0 +1,397 @@
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #EEC643;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #EEC643;
+          box-shadow: 0 0 1px #EEC643;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+label {
+  margin-right: 65px;
+}
+
+label img {
+  left: 105%;
+  position: relative;
+}
+
+html {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eef0f2), color-stop(35%, #0d21a1), to(#011638));
+  background: linear-gradient(180deg, #eef0f2 0%, #0d21a1 35%, #011638 100%);
+  height: 100%;
+}
+
+body.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0px;
+}
+
+nav {
+  width: 100%;
+}
+
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  background: #0d21a1;
+  padding: 10px 5px;
+}
+
+h3 {
+  background: #EEC643;
+  color: #011638;
+  padding: 5px;
+}
+
+.navbar {
+  background: #011638;
+}
+
+.navbar li:hover {
+  background: #EEC643;
+}
+
+.breadcrumbs {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .breadcrumbs {
+    background: #0d21a1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 10px;
+  }
+  .breadcrumbs p {
+    color: #eef0f2;
+  }
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #EEC643;
+  }
+  .breadcrumbs a:hover {
+    color: #eef0f2;
+  }
+}
+
+.cardListSinger {
+  background: #FCF3CF;
+  padding: 0px;
+  margin: 2px 0px;
+  border: 2px solid #0d21a1;
+}
+
+.cardListSinger:hover {
+  background: #0d21a1;
+  border: 2px solid #EEC643;
+}
+
+.cardListSinger:hover .pais {
+  color: #EEC643;
+}
+
+.cardListSinger:hover .representante {
+  background: #011638;
+  color: #eef0f2;
+}
+
+.ArtistaCancion {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.corazonBanderaList {
+  width: 10%;
+  position: relative;
+  left: 40%;
+}
+
+.pais {
+  color: #0d21a1;
+  font-weight: bold;
+  margin: 0px 10px;
+}
+
+.representante {
+  background: #0d21a1;
+  color: #eef0f2;
+  border-radius: 0px 20px 20px 0px;
+  font-weight: bold;
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3px;
+}
+
+.representante img {
+  width: 15%;
+}
+
+.cancion {
+  background: #EEC643;
+  color: #0d21a1;
+  border-radius: 0px 20px 20px 0px;
+  width: 130%;
+  padding: 5px 5px;
+}
+
+.fotoArtista {
+  border-radius: 50px 50px;
+  margin: 2px 0px;
+}
+
+.footerDesktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .footerDesktop {
+    background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #011638), to(#0d21a1));
+    background: linear-gradient(90deg, #020024 0%, #011638 35%, #0d21a1 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerDesktop .footerLogo {
+    width: 200px;
+    padding: 5px;
+  }
+  .footerDesktop a {
+    color: #eef0f2;
+    text-decoration: none;
+    padding: 5px;
+  }
+  .footerDesktop a:hover {
+    background: #EEC643;
+    color: #011638;
+  }
+  .footerDesktop div {
+    background: #EEC643;
+    padding: 3px;
+    border-radius: 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footerDesktop div img {
+    padding: 5px;
+    -webkit-transition: margin 1s;
+    transition: margin 1s;
+  }
+  .footerDesktop div img:hover {
+    margin: 0 10px;
+  }
+}
+
+.detalle {
+  background: #eef0f2;
+}
+
+.grupoAudioFoto audio {
+  margin: 30px 0px;
+  background: #EEC643;
+  padding: 5px;
+  border-radius: 20px 20px;
+  width: 95%;
+}
+
+.grupoAudioFoto img {
+  margin: 30px 0px;
+}
+
+.etiquetas p {
+  color: #011638;
+}
+
+.etiquetas button {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #eec643), to(#eef0f2));
+  background: linear-gradient(to bottom, #eec643 5%, #eef0f2 100%);
+  background-color: #eec643;
+  border-radius: 6px;
+  border: 1px solid #eec643;
+  display: inline-block;
+  cursor: pointer;
+  color: #0d21a1;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  text-shadow-box-shadow: 0px 1px 0px 0px #fff6af;
+}
+
+.etiquetas button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #eef0f2), to(#eec643));
+  background: linear-gradient(to bottom, #eef0f2 5%, #eec643 100%);
+  background-color: #eef0f2;
+}
+
+.formularioRegistro {
+  background: #E5E8E8;
+  width: 96%;
+  padding: 20px;
+  border-radius: 20px 20px;
+}
+
+.formularioRegistro label {
+  color: #011638;
+}
+
+.formularioRegistro button {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #eec643), to(#eef0f2));
+  background: linear-gradient(to bottom, #eec643 5%, #eef0f2 100%);
+  background-color: #eec643;
+  border-radius: 6px;
+  border: 1px solid #eec643;
+  display: inline-block;
+  cursor: pointer;
+  color: #0d21a1;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  text-shadow-box-shadow: 0px 1px 0px 0px #fff6af;
+}
+
+.formularioRegistro button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #eef0f2), to(#eec643));
+  background: linear-gradient(to bottom, #eef0f2 5%, #eec643 100%);
+  background-color: #eef0f2;
+}
+
+.formularioRegistro .form-group:hover label {
+  color: #EEC643;
+}
+
+.formularioRegistro .form-group:hover input {
+  border: 1px solid #EEC643;
+  -webkit-box-shadow: inset 0 0 10px #EEC643;
+  box-shadow: inset 0 0 10px #EEC643;
+}
+/*# sourceMappingURL=viewsStyle.css.map */

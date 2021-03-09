@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style/sass/guiaHome.css">
+   
+    
+</head>
+<body>
+
+    <header class="mobil">
+        <img class="menu" src="./recursos/img/iconos/menu.ico" alt="">       
+        
+        <img  class="logoCabecera" src="./recursos/img/logotipos/Logo_negro.png" alt="">
+        <img src="./recursos/img/iconos/search.ico" alt="">
+        <img src="./recursos/img/iconos/account.ico" alt="">
+
+        <nav>            
+            <ul>
+                <li> Rotterdam 2021 </li>
+                <li><a href="./views/listado.html">Participantes</a></li>
+                <li><a href="">La ciudad</a></li>
+                <li><a href="">Logotipo</a></li>
+                <li><a href="">Quien Ganará</a></li>
+                <li><a href="">Historia de Eurovision</a></li>
+                <li><a href="">Prensa</a></li>
+                <li><a href="./views/formulario.html">Contacto</a></li>
+                <li><a href="./views/reloj.html">El Reloj</a></li>
+                <li>Redes Sociales</li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">YouTube</a></li>
+                <li><a href="">Google+</a></li>
+                <li><a href="">Tienda</a></li>
+
+            </ul>
+            
+        </nav>
+
+    </header>
+    <header class="desktop-header">      
+
+        <img  class="logoCabecera" src="./recursos/img/logotipos/Logo_negro.png" alt="">
+
+    </header>
+    <nav class="desktop-nav">            
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">Rotterdam 2021</a></li>
+            <li><a href="./views/listado.html">Participantes</a></li>
+            <li><a href="">La ciudad</a></li>
+            <li><a href="">Historia</a></li>
+            <li><a href="">Prensa</a></li>
+            <li><a href="./views/formulario.html">Contacto</a></li>
+            <li><a href="">Tienda</a></li>
+            <li><a href="./views/reloj.html">El Reloj</a></li>
+
+        </ul>
+        <div>
+            <input type="text" placeholder="Search">
+            <img src="./recursos/img/iconos/search.ico" alt="">
+            <img src="./recursos/img/iconos/account.ico" alt="">
+        </div>
+        
+
+        
+    </nav>
+
+    <div class="breadcrumbs">
+        <p>></p>
+        <a href="./index.html">Home</a>
+    </div>
+
+    <main>
+        <section class="thisYear">
+            <article>
+          
+            </article>
+        </section>
+
+        <section class="participantes">
+
+            <article id="cantantesInicio" class="cantantesInicio" >
+                <h2>Participantes</h2>
+                <p>de Rotterdam 2021</p>
+                <input type="text" id="seleccionaPais" name="seleccionaPais" placeholder="País"></input>
+                <button onclick="buscarParticipante()"><img src="./recursos/img/iconos/search.ico" alt=""></button>
+            </article>
+
+            <article id="cantantesInicioDesktop" class="cantantesInicioDesktop" >
+                <h2 id="nombreAristaDesktop">Participantes</h2>
+                <p id="titulaCancionDesktop">de Rotterdam 2021</p>
+                <img id=logoParticipantesDesktop src="./recursos/img/logotipos/logo_rotterdamBlanco.svg" alt="">
+                <audio id="audioCanciondesktop" controls src="./recursos/songs/spain.mp3"></audio>
+                <span id="video"></span>
+                <img class="corazonDesktop" id="corazonDesktop" src="" alt="">
+                <div class="banderasDesktop">
+                    <a><img src="./recursos/img/paises/banderas/albania.ico" onclick="clickBandera(0)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/armenia.ico" onclick="clickBandera(1)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/australia.ico" onclick="clickBandera(2)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/austria.ico" onclick="clickBandera(3)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/azerbaijan.ico" onclick="clickBandera(4)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/belarus.ico" onclick="clickBandera(5)"  alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/belgium.ico" onclick="clickBandera(6)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/bulgaria.ico" onclick="clickBandera(7)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/croatia.ico" onclick="clickBandera(8)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/cyprus.ico" onclick="clickBandera(9)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/czechRepublic.ico" onclick="clickBandera(10)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/denmark.ico" onclick="clickBandera(11)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/estonia.ico" onclick="clickBandera(12)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/finland.ico" onclick="clickBandera(13)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/france.ico" onclick="clickBandera(14)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/georgia.ico" onclick="clickBandera(15)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/germany.ico" onclick="clickBandera(16)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/greece.ico" onclick="clickBandera(17)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/iceland.ico" onclick="clickBandera(18)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/ireland.ico" onclick="clickBandera(19)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/israel.ico" onclick="clickBandera(20)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/italy.ico" onclick="clickBandera(21)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/Latvia.ico" onclick="clickBandera(22)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/lithuania.ico" onclick="clickBandera(23)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/malta.ico" onclick="clickBandera(24)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/moldova.ico" onclick="clickBandera(25)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/northMacedonia.ico" onclick="clickBandera(26)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/norway.ico" onclick="clickBandera(27)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/poland.ico" onclick="clickBandera(28)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/portugal.ico" onclick="clickBandera(29)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/romania.ico" onclick="clickBandera(30)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/russia.ico" onclick="clickBandera(31)"  alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/sanmarino.ico" onclick="clickBandera(32)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/serbia.ico" onclick="clickBandera(33)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/slovenia.ico" onclick="clickBandera(34)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/spain.ico" onclick="clickBandera(35)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/sweden.ico" onclick="clickBandera(36)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/switzerland.ico" onclick="clickBandera(37)"  alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/theNetherlands.ico" onclick="clickBandera(38)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/ukraine.ico" onclick="clickBandera(39)" alt=""></a>
+                    <a><img src="./recursos/img/paises/banderas/unitedKingdom.ico" onclick="clickBandera(40)" alt=""></a>
+                </div>
+            </article>
+
+            <article id="articuloParticipante" class="cantante-armenia">
+                <img class="volverArticuloInicio" onclick="volverArticuloInicio()" src="./recursos/img/iconos/cancel.ico" alt="">
+                <img id="imagenCor" src="./recursos/img/paises/corazones/spain.svg" alt="Spain">
+                <h2 id="nombreArista">Blas Cantó</h2>
+                <p id="titulaCancion">Universo</p>
+                <audio id="audioCancion" controls src="./recursos/songs/spain.mp3"></audio>
+                <div>
+                    <span><img onclick="haciaAtras()" src="./recursos/img/iconos/left.ico" alt=""></span>
+                    <span><img onclick="haciaDelante()" src="./recursos/img/iconos/right.ico" alt=""></span>
+                </div>
+               
+                
+                
+            </article>
+
+        
+
+        </section>
+
+        <section class="noticias">
+            <article class="article-euroJunior" onclick="activarArticulo('noticias_contenidoArticulo_1')">
+        
+                <div id="noticias_contenidoArticulo_1">
+                    <h2>Francia gana EuroJunior</h2>
+                    <h4>España 3º puesto con 'palante'</h4>
+                    <p>Valentina con el tema 'J'Imagin' representando a Francia quedo en 1º posicion y en 3º posición con 133 votos. <a href="">Leer más</a></p>
+                    
+                </div>
+                
+            </article>
+
+            <article class="article-selecconFrancia" onclick="activarArticulo('noticias_contenidoArticulo_2')">
+        
+                <div id="noticias_contenidoArticulo_2">
+                    <h2>Francia Selecciona a su representante</h2>
+                    <h4>Realizara una gala de seleccion</h4>
+                    <p>Participaran 20 aspirantes en una preselección que contara con 3 galas retransmitidas en la television fracesa. <a href="">Leer más</a></p>
+                    
+                </div>
+                
+            </article>
+
+            <article class="article-escenario" onclick="activarArticulo('noticias_contenidoArticulo_3')">
+        
+                <div id="noticias_contenidoArticulo_3">
+                    <h2>Rotterdam presenta su escenario</h2>
+                    <h4>Más grande y mas luces que nunca</h4>
+                    <p>Paises bajos presenta como será el escenario para el certamen de 2021. Más grande para repetar las distancias. <a href="">Leer más</a></p>
+                    
+                </div>
+                
+            </article>
+
+            <article class="article-ultimoGanador" onclick="activarArticulo('noticias_contenidoArticulo_4')">
+        
+                <div id="noticias_contenidoArticulo_4">
+                    <h2>Duncan Laurence abrirá la gala</h2>
+                    <h4>Presentará su nuevo tema</h4>
+                    <p>Duncan Larence abrirá la gala de la gran final con un número musical presentando su nuevo tema y cantando la cancion con la que ganó. <a href="">Leer más</a></p>
+                    
+                </div>
+                
+            </article>
+        </section>
+        
+    </main>
+    
+    <aside>
+        <h2>Compra tus entradas y productos de Eurovision aquí </h2>
+    </aside>
+
+    <section class="seccionSecundaria">
+
+        <article class="quienGanara">
+            <h2>
+                Quien ganará haz tus apuestas
+            </h2>
+    
+
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'firts')">1ª Semifinal</button>
+                <button class="tablinks" onclick="openTab(event, 'second')">2ª Semifinal</button>
+                <button class="tablinks" onclick="openTab(event, 'final')">Gran Final</button>
+            </div>
+
+            <div id="firts" class="tabcontent" style="display: block;">
+            
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/albania.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/armenia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/australia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/austria.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/azerbaijan.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/belarus.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/belgium.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/bulgaria.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/croatia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/cyprus.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/czechRepublic.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/denmark.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/estonia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/finland.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/france.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/georgia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/germany.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/greece.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/iceland.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/ireland.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/israel.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                
+            </div>
+
+
+            <div id="second" class="tabcontent">
+            
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/italy.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/Latvia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/lithuania.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/malta.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/moldova.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/northMacedonia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/norway.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/poland.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/portugal.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/romania.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/russia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/sanMarino.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/serbia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/slovenia.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/spain.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/sweden.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/switzerland.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/theNetherlands.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/ukraine.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+                <label class="switch">
+                    <img src="./recursos/img/paises/banderas/unitedKingdom.ico" alt="">
+                    <input type="checkbox" >
+                    <div class="slider round"></div>
+                </label>
+
+                
+            </div>
+
+        </article>
+
+        <aside class="registroForm">
+
+            <form action="">
+                <h3>Suscríbete a news letter</h3>
+                <input type="text" placeholder="Email">
+                <button>Suscríbete</button>
+            </form>
+
+        </aside>
+
+
+    </section>
+
+
+
+    <footer class="footerDesktop">
+
+        <a href="./index.html">HOME</a>
+        <a href="">Rotterdam 2021</a>
+        <a href="">Política-web</a>
+        <img class="footerLogo" src="./recursos/img/logotipos/Logo_negro.png" alt="">
+        <a href="./views/formulario.html">CONTACTO</a>
+        <div>
+            <img src="./recursos/img/iconos/social_facebook.ico" alt="">
+            <img src="./recursos/img/iconos/social_instagram.ico" alt="">
+            <img src="./recursos/img/iconos/social_Twitter.ico" alt="">
+            <img src="./recursos/img/iconos/social_youtube.ico" alt="">
+            <img src="./recursos/img/iconos/social_googleplus.ico" alt="">
+        </div>
+        
+
+    </footer>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/funcionalidad.js"></script>
+</body>
+</html>

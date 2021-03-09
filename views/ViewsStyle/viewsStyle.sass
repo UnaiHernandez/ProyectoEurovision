@@ -1,0 +1,180 @@
+@import ./../../style/sass/_variables
+@import ./../../style/sass/_genericos
+
+html
+        background: $fondo_degradado
+        height: 100%
+
+body.container
+        width: 100%
+        max-width: 100%
+        padding: 0px
+nav
+        width: 100%
+.row
+        margin: 0px
+        padding: 0px
+section
+        background: $azulClaro
+        padding: 10px 5px
+h3
+        background: $amarillo
+        color: $azulOscuro
+        padding: 5px
+
+.navbar
+        background: $azulOscuro
+        li
+                &:hover
+                        background: $amarillo
+.breadcrumbs
+        display: none
+@media only screen and ( min-width: 1200px )
+        .breadcrumbs
+                background: $azulClaro
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                padding-left: 10px
+
+                p
+                        color: $blanco
+                a 
+                        text-decoration: none
+                        color: $amarillo
+                        &:hover
+                                color: $blanco
+        
+
+.cardListSinger
+        background: #FCF3CF
+        padding: 0px
+        margin:  2px 0px
+        border: 2px solid $azulClaro
+        &:hover
+                background: $azulClaro
+                border: 2px solid $amarillo
+                .pais
+                        color: $amarillo
+                .representante
+                        background: $azulOscuro
+                        color: $blanco
+
+.ArtistaCancion
+        padding: 0px
+        display: flex
+        flex-direction: column
+        justify-content: center
+.corazonBanderaList
+        width: 10%
+        position: relative
+        left: 40%
+.pais
+        color: $azulClaro
+        font-weight: bold
+        margin: 0px 10px    
+.representante
+        background: $azulClaro
+        color: $blanco
+        border-radius: 0px 20px 20px 0px  
+        font-weight: bold 
+        padding: 10px 5px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin-top: 3px
+        img
+                width: 15%
+.cancion
+        background: $amarillo
+        color: $azulClaro
+        border-radius: 0px 20px 20px 0px  
+        width: 130%
+        padding: 5px 5px
+.fotoArtista
+        border-radius: 50px 50px
+        margin: 2px 0px
+.footerDesktop
+        display: none
+@media only screen and ( min-width: 1200px )
+        .footerDesktop
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,22,56,1) 35%, rgba(13,33,161,1) 100%)
+                display: flex
+                justify-content: space-around
+                flex-direction: row
+                align-items: center
+
+                .footerLogo
+                        width: 200px
+                        padding: 5px
+                a 
+                        color: $blanco
+                        text-decoration: none
+                        padding: 5px
+                        &:hover
+                                background: $amarillo
+                                color: $azulOscuro
+                div
+                        background: $amarillo
+                        padding: 3px
+                        border-radius: 20px 20px
+                        display: flex
+                        flex-direction: row
+                        img
+                                padding: 5px
+                                transition: margin 1s
+                                &:hover
+                                        margin: 0 10px
+
+
+
+
+//vista detalle
+.detalle
+        background: $blanco
+
+.grupoAudioFoto
+        audio
+                margin: 30px 0px
+                background: $amarillo
+                padding: 5px
+                border-radius: 20px 20px
+                width: 95%
+        img
+                margin: 30px 0px
+
+.etiquetas
+        p
+                color: $azulOscuro
+        button
+                @include botonGenerico()
+                &:hover
+                        @include botonGenericoHover()
+                        
+
+//Formulario
+
+.formularioRegistro
+        background: #E5E8E8
+        width: 96%
+        padding: 20px
+        border-radius: 20px 20px
+        label
+                color: $azulOscuro
+        button
+                @include botonGenerico()
+                &:hover
+                        @include botonGenericoHover() 
+        .form-group
+                &:hover
+                        label
+                                color: $amarillo
+                        input
+                                border: 1px solid $amarillo
+                                -moz-box-shadow:    inset 0 0 10px $amarillo
+                                -webkit-box-shadow: inset 0 0 10px $amarillo
+                                box-shadow:         inset 0 0 10px $amarillo
+
+
+
+              

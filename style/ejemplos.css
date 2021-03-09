@@ -1,0 +1,196 @@
+.paletaColores{
+    display: flex;   
+    justify-content: center;
+    flex-wrap: wrap;
+   
+   }
+   .paletaColores div{
+       width: 200px;
+       height: 100px;
+       color: white;
+       display: flex;
+       justify-content: end;
+   }
+   .paletaColores div:first-child{
+       background-color: #011638;
+    }
+   .paletaColores div:nth-last-child(4){
+       background-color: #0D21A1;
+    }
+   .paletaColores div:nth-last-child(3){
+       background-color: #141414;
+    }
+   .paletaColores div:nth-last-child(2){
+      color: black;
+      background-color: #EEF0F2;
+   }
+   .paletaColores div:nth-last-child(1){
+       background-color: #EEC643;
+    }
+   
+   
+    .tipografia{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+   
+        width: 50%;
+    }
+    .tipografia h1{
+        font-size: 40px;
+    }
+    .tipografia h2{
+       font-size: 30px;
+   }
+   .tipografia h3{
+       font-size: 25px;
+   }
+   .tipografia h4{
+       font-size: 20px;
+   }
+   .tipografia h5{
+       font-size: 18px;
+   }
+   .tipografia p{
+       font-size: 16px;
+   }
+   .iconografia div:first-child img{
+       width: 400px;
+   }
+   .botonesExample{
+       display: flex;
+       flex-direction: row;
+   }
+   .botonesExample div{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   
+   .myButton {
+       box-shadow: 0px 1px 0px 0px #fff6af;
+       background:linear-gradient(to bottom, #eec643 5%, #eef0f2 100%);
+       background-color:#eec643;
+       border-radius:6px;
+       border:1px solid #eec643;
+       display:inline-block;
+       cursor:pointer;
+       color:#0d21a1;
+       font-family:Arial;
+       font-size:15px;
+       font-weight:bold;
+       padding:6px 24px;
+       text-decoration:none;
+       text-shadow:0px 1px 0px #ffee66;
+   }
+   .myButton:hover {
+       background:linear-gradient(to bottom, #eef0f2 5%, #eec643 100%);
+       background-color:#eef0f2;
+   }
+   .myButton:active {
+       position:relative;
+       top:1px;
+   }
+   
+   .myButton2 {
+       box-shadow: 0px 1px 0px 0px #566be3;
+       background:linear-gradient(to bottom, #071429 5%, #0d21a1 100%);
+       background-color:#071429;
+       border-radius:6px;
+       border:1px solid #0d21a1;
+       display:inline-block;
+       cursor:pointer;
+       color:#eef0f2;
+       font-family:Arial;
+       font-size:15px;
+       font-weight:bold;
+       padding:6px 24px;
+       text-decoration:none;
+       text-shadow:0px 1px 0px #c2c9f2;
+   }
+   .myButton2:hover {
+       background:linear-gradient(to bottom, #0d21a1 5%, #071429 100%);
+       background-color:#0d21a1;
+   }
+   .myButton2:active {
+       position:relative;
+       top:1px;
+   }
+   .nav{
+       background: rgb(2,0,36);
+       background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,22,56,1) 35%, rgba(13,33,161,1) 100%);
+       display: flex;
+       align-items: center;
+       justify-content: left;
+       padding: 5%;
+   }
+   .nav nav{
+       
+       display: flex;
+       flex-direction: row;
+       justify-content: left;
+   
+   }
+   .nav nav a{
+       text-decoration: none;
+       padding: 10px;
+       color: #EEC643;
+       font-weight: bold;
+       font-size: 20px;
+       
+   }
+   .nav nav a:hover{
+       font-size: 23px;
+       color: #0d21a1;
+       text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 9px #fff, 0 0 11px #EEC643, 0 0 13px #EEC643;
+       
+   }
+   
+   .articulos{
+       width: 90%;
+       height: 600px;
+       border: 1px solid black;
+   }
+   .articulos div{
+       background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,22,56,1) 35%, rgba(13,33,161,1) 100%);  
+       position: relative;
+       top: -50%;
+       border-radius: 16px 0px 0px 16px;
+       height:  90px;
+       width: 50%;
+       display: flex;
+       justify-content: left;
+       align-items: center;
+       flex-direction: column;
+       position: relative;
+       left: 50%;
+       
+   }
+   .articulos>div>h3{
+       color:#eef0f2; 
+       padding-left:10% ;  
+       margin: 5px;
+   
+   }
+   .articulos>div>p{
+       color:#eef0f2;   
+       padding-left:10% ;  
+       margin: 5px;
+   }
+   
+   .img_Singer{
+       width: 100%;
+       height: auto;
+   }
+   .corazon{
+       position: relative;
+       left: 85%;
+       top: -90%;
+       
+   }
+   .logoRoterdam{
+       width: 200px;
+       position: relative;
+       top: -100%;
+       left: -10%;
+       
+   }
